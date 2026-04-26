@@ -1,0 +1,238 @@
+.tutorial-page {
+  padding-top: 34px;
+  padding-bottom: 50px;
+}
+
+.tutorial-hero {
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+.tutorial-hero-media {
+  position: relative;
+  min-height: 280px;
+  border-radius: 28px;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(37, 99, 235, 0.92), rgba(59, 130, 246, 0.72)),
+    url("https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1400&auto=format&fit=crop") center/cover no-repeat;
+}
+
+.tutorial-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.12), rgba(15, 23, 42, 0.25));
+}
+
+.tutorial-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 42px 34px;
+  color: #fff;
+  max-width: 700px;
+}
+
+.tutorial-hero-content h1 {
+  font-size: clamp(2.1rem, 4vw, 3.6rem);
+  line-height: 1.02;
+  margin-bottom: 10px;
+}
+
+.tutorial-hero-content p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.eyebrow-light {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.tutorial-intro {
+  margin-bottom: 18px;
+}
+
+.section-copy {
+  max-width: 760px;
+}
+
+.section-copy h2 {
+  font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+  margin-bottom: 8px;
+}
+
+.section-copy p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.tutorial-steps {
+  display: grid;
+  gap: 18px;
+}
+
+.step-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 18px;
+  padding: 22px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: var(--shadow);
+}
+
+.step-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(37, 99, 235, 0.10);
+  color: var(--primary);
+  box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.06);
+}
+
+.step-icon .material-symbols-outlined {
+  font-size: 28px;
+}
+
+.step-body {
+  min-width: 0;
+}
+
+.step-label {
+  display: inline-block;
+  margin-bottom: 6px;
+  color: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.step-body h3 {
+  margin-bottom: 8px;
+  font-size: 1.35rem;
+}
+
+.step-body p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.step-note {
+  margin-top: 14px;
+  display: inline-flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: #f8fbff;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.step-note .material-symbols-outlined {
+  color: var(--primary);
+  font-size: 20px;
+  margin-top: 1px;
+}
+
+.mock-select-card {
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: #f7faff;
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.mock-select-left,
+.mock-select-value {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mock-select-left {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.mock-select-value {
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid var(--line);
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.tips-section {
+  margin-top: 28px;
+}
+
+.tips-card {
+  padding: 22px;
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.tips-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(37, 99, 235, 0.10);
+  color: var(--primary);
+}
+
+.tips-icon .material-symbols-outlined {
+  font-size: 28px;
+}
+
+.tips-content h3 {
+  margin-bottom: 8px;
+  font-size: 1.25rem;
+}
+
+.tips-content p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .tutorial-hero-content {
+    padding: 28px 22px;
+  }
+
+  .tutorial-hero-media {
+    min-height: 240px;
+  }
+
+  .step-card,
+  .tips-card {
+    grid-template-columns: 1fr;
+  }
+
+  .step-icon,
+  .tips-icon {
+    width: 52px;
+    height: 52px;
+  }
+}
